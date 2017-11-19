@@ -5,7 +5,7 @@ import java.text.DecimalFormat;
  */
 public class PosteriorProbability {
 
-    private static final Double[] INIT_P_0_H_I = {0.0, 0.10, 0.20, 0.40, 0.20, 0.10};
+    private static Double[] INIT_P_0_H_I = {0.0, 0.10, 0.20, 0.40, 0.20, 0.10};
 
     private static final Double[] INIT_P_Q1_C_H_I = {0.0, 1.0, 0.75, 0.50, 0.25, 0.0};
 
@@ -93,7 +93,7 @@ public class PosteriorProbability {
 
     private static void replaceElementsInTEMP_P_T_H_I(){
         for (int i=1;i<=5;i++){
-           INIT_P_0_H_I[i] = TEMP_P_T_H_I[i];
+            INIT_P_0_H_I[i] = TEMP_P_T_H_I[i];
         }
     }
 
